@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# reconfigure bind - regenerates secret keys
+dpkg-reconfigure bind9
+
+# Only run once
+rm /start.d/regen-bind-key
+
