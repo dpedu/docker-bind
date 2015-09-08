@@ -5,7 +5,6 @@ MAINTAINER Dave P
 RUN apt-get update ; \
     apt-get install -y supervisor bind9 dnsutils ; \
     rm /etc/bind/rndc.key ; \
-    chmod +x /start.d/regen-bind-key ; \
     mkdir /var/run/named ; \
     chown bind /var/run/named ; \
     chgrp bind /var/run/named ; \
