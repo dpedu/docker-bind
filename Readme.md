@@ -17,4 +17,3 @@ don't have that if you're starting out. So extract it from the image:
 * Run a copy that immediately exits: `docker run --name="tempbind" dpedu/bind bash`
 * Extract the files: `docker cp tempbind:/etc/bind/ /tmp/`
 * Delete temp container: `docker rm tempbind`
-
