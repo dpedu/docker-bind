@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # reconfigure bind - regenerates secret keys
-rndc-confgen -a -r /dev/urandom
-
-# Only run once
-rm /start.d/regen-bind-key
+if [ ! -f /etc/bind/rndc.key ]; then
+    rndc-confgen -a -r /dev/urandom
+fi
