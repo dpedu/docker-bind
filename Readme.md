@@ -6,7 +6,7 @@ Quick start
 -----------
 
 * Pull: `docker pull dpedu/bind`
-* Run: `docker run --name="nameserver "-p 53:53 -v /data/bindconfig:/etc/bind dpedu/bind
+* Run: `docker run --name="nameserver "-p 53:53 -v /data/bindconfig:/etc/bind dpedu/bind`
 
 Getting the default config
 --------------------------
